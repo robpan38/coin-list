@@ -1,0 +1,12 @@
+.CoinTable tr td {
+    padding-left: 20px;
+    color: white;
+}
+
+.CoinTable th {
+    color: white;
+}
+
+.CoinTableDiv {
+    padding-top: 30px;
+}
