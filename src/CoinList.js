@@ -1,8 +1,9 @@
 import './CoinList.css';
+import {uuid} from 'uuidv4';
 
 const CoinList = (props) => {
     const elems = props.coins.map(coin => {
-        return <tr key={coin['symbol']} className="CoinTableRow">
+        return <tr key={uuid()} className="CoinTableRow">
             <td><img src={coin['image']} width="16" height="16"></img></td>
             <td>{coin['name']}</td>
             <td>{coin['symbol']}</td>

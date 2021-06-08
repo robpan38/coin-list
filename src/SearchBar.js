@@ -1,15 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import './SearchBar.css';
 
 const SearchBar = (props) => {
     const [continut, setContinut] = useState('');
     
+    useEffect(() => {
+        props.handleSearchBar(continut);
+    }, [continut])
+
     const handleContinut = (e) => {
-        console.log(e.target.value);
+        setContinut(e.target.value);
     }
 
     return (
-        <input className="SearchBar" type="text" onChange={handleContinut}></input>
+        <input className="SearchBar" type="text" onChange={handleContinut} value={continut}></input>
     )
 }
 
