@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>Cauta o criptomoneda barosane</p>
+      <p>Search a currency</p>
       <SearchBar handleSearchBar={handleSearchBar}></SearchBar>
       <CoinList coins={filteredCoins.length ? filteredCoins : coins}></CoinList>
     </div>
