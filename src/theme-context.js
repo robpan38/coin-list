@@ -3,10 +3,10 @@ import React from "react";
 export const theme = {
     light: {
       text: [26, 24, 24],
-      background: [0, 0, 0]
+      background: [255, 255, 255]
     },
     dark: {
-      text: [0, 0, 0],
+      text: [255, 255, 255],
       background: [26, 24, 24]
     }
 }
