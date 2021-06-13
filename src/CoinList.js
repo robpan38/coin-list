@@ -8,7 +8,7 @@ const CoinList = (props) => {
             <td>{coin['name']}</td>
             <td>{coin['symbol']}</td>
             <td>${coin['current_price'].toLocaleString()}</td>
-            {coin['price_change_percentage_24h'] >= 0 ? <td class="green">{coin['price_change_percentage_24h']}</td> : <td class="red">{coin['price_change_percentage_24h']}</td>}
+            {coin['price_change_percentage_24h'] >= 0 ? <td className="green">{coin['price_change_percentage_24h']}</td> : <td className="red">{coin['price_change_percentage_24h']}</td>}
             <td>${coin['market_cap'].toLocaleString()}</td>
             <td>${coin['high_24h'] != null ? coin['high_24h'].toLocaleString() : coin['high_24h']}</td>
             <td>${coin['low_24h'] != null ? coin['low_24h'].toLocaleString() : coin['low_24h']}</td>

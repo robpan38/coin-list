@@ -1,6 +1,13 @@
 .App {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  background-color: rgb(26, 24, 24);
+}
+
+.App button {
+  position: absolute;
+  left: 5%;
+  top: 5%;
 }
 
 .App {
@@ -9,6 +16,7 @@
 
 .App p {
   color: white;
+  margin: 0;
   font-size: 1.8vw;
   margin-bottom: 0px;
 }
